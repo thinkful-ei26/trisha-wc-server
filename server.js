@@ -40,7 +40,7 @@ app.use((err, req, res, next) => {
 });
 
 // Listen for incoming connections
-if (require.main === module) {
+if (require.main === module) { //prevents server from automatically running when we run tests
   // Connect to DB and Listen for incoming connections
   mongoose.connect(DATABASE_URL)
     .then(instance => {
