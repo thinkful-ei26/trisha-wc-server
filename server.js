@@ -21,6 +21,16 @@ app.use(express.static('public'));
 // Parse request body
 app.use(express.json());
 
+//Mount routers/routes
+app.get('/api/recipes', (req, res) => {
+  const recipes = [
+    'Zuchinni Meatballs', 
+    'Bacon', 
+    'Empanada'
+  ];
+  return res.json(recipes);
+});
+
 // Custom 404 Not Found route handler
 app.use((req, res, next) => {
   const err = new Error('Not Found');
