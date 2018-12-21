@@ -3,8 +3,9 @@
 const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
+const cors = require('cors');
 
-const { PORT, DATABASE_URL } = require('./config');
+const { PORT, DATABASE_URL, CLIENT_ORIGIN } = require('./config');
 
 // Create an Express application
 const app = express();
@@ -14,9 +15,15 @@ app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'common', {
   skip: () => process.env.NODE_ENV === 'test'
 }));
 
+app.use(
+  cors({
+    origin: CLIENT_ORIGIN
+  })
+);
+
 // Create a static webserver 
 //this is a test for the server, will replace with react client side)
-app.use(express.static('public'));
+// app.use(express.static('public'));
 
 // Parse request body
 app.use(express.json());
