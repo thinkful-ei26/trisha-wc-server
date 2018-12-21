@@ -1,16 +1,18 @@
 {
-  "name": "server",
+  "name": "whats-cooking-server",
   "version": "1.0.0",
   "description": "What's Cooking App ",
   "main": "server.js",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --timeout 5000",
     "start": "node server.js"
   },
   "author": "Trisha Aguinaldo",
   "license": "ISC",
   "dependencies": {
-    "express": "^4.16.4"
+    "express": "^4.16.4",
+    "mongoose": "^5.4.0",
+    "morgan": "^1.9.1"
   },
   "devDependencies": {
     "chai": "^4.2.0",
