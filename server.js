@@ -21,6 +21,7 @@ app.use(
   })
 );
 
+
 // Create a static webserver 
 //this is a test for the server, will replace with react client side)
 // app.use(express.static('public'));
