@@ -5,7 +5,9 @@ const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
 
-const { PORT, DATABASE_URL, CLIENT_ORIGIN } = require('./config');
+const Recipe = require('./models/recipe');
+
+const { PORT, MONGODB_URI, CLIENT_ORIGIN } = require('./config');
 
 // Create an Express application
 const app = express();
@@ -29,14 +31,30 @@ app.use(express.static('public'));
 app.use(express.json());
 
 //Mount routers/routes
+// app.get('/api/recipes', (req, res) => {
+//   const recipes = [
+//     'Zuchinni Meatballs', 
+//     'Bacon', 
+//     'Empanada'
+//   ];
+//   return res.json(recipes);
+// });
+
+
+//mongoose find all recipe documents
 app.get('/api/recipes', (req, res) => {
-  const recipes = [
-    'Zuchinni Meatballs', 
-    'Bacon', 
-    'Empanada'
-  ];
-  return res.json(recipes);
+  Recipe
+    .find()
+    .then(recipes => {
+      res.json(recipes);
+    })
+    .catch(
+      err => {
+        console.error(err);
+        res.status(500).json({message: 'Internal server error'});
+      });
 });
+
 
 // Custom 404 Not Found route handler
 app.use((req, res, next) => {
@@ -59,7 +77,7 @@ app.use((err, req, res, next) => {
 // Listen for incoming connections
 if (require.main === module) { //prevents server from automatically running when we run tests
   // Connect to DB and Listen for incoming connections
-  mongoose.connect(DATABASE_URL)
+  mongoose.connect(MONGODB_URI)
     .then(instance => {
       const conn = instance.connections[0];
       console.info(`Connected to: mongodb://${conn.host}:${conn.port}/${conn.name}`);
