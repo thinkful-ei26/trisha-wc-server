@@ -12,7 +12,7 @@ const recipeSchema = new mongoose.Schema({
   prep: String,
   cook: String,
   directions: {type: String, required: true}, 
-  condensed: {type: Boolean, default: true }
+  expanded: {type: Boolean, default: false }
 });
 
 recipeSchema.set('toJSON', {
