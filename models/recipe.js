@@ -11,7 +11,8 @@ const recipeSchema = new mongoose.Schema({
   imgUrl: String,
   prep: String,
   cook: String,
-  directions: {type: String, required: true}
+  directions: {type: String, required: true}, 
+  condensed: {type: Boolean, default: true }
 });
 
 recipeSchema.set('toJSON', {
