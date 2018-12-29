@@ -9,6 +9,7 @@ const recipeSchema = new mongoose.Schema({
     type: String, required: true
   }],
   imgUrl: String,
+  serving: String,
   prep: String,
   cook: String,
   directions: {type: String, required: true}, 
