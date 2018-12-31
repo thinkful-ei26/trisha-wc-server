@@ -41,8 +41,8 @@ app.use(express.json());
 // });
 
 
-//mongoose find all recipe documents
-app.get('/api/recipes', (req, res) => {
+/* ========== GET/READ ALL RECIPES ========== */
+app.get('/api/recipes', (req, res, next) => {
   Recipe
     .find()
     .then(recipes => {
@@ -53,6 +53,29 @@ app.get('/api/recipes', (req, res) => {
         console.error(err);
         res.status(500).json({message: 'Internal server error'});
       });
+});
+
+/* ========== GET/READ A SINGLE RECIPE ========== */
+
+app.get('/api/recipes/:id', (req, res, next) => {
+  const { id } = req.params;
+
+  /***** Never trust users - validate input *****/
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    const err = new Error('The `id` is not valid');
+    err.status = 400;
+    return next(err);
+  }
+
+  Recipe.findOne({ _id: id })
+    .then(result => { 
+      if (result) {
+        res.json(result);
+      } else {
+        next();
+      }
+    })
+    .catch( err => next(err));
 });
 
 
