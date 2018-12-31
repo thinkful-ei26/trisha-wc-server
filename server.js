@@ -97,6 +97,62 @@ app.post('/api/recipes/', (req, res, next) => {
     .catch( err => next(err));
 });
 
+/* ========== PUT/UPDATE A SINGLE ITEM ========== */
+app.put('/api/recipes/:id', (req, res, next) => {
+  const { id } = req.params;
+  const toUpdate = {};
+  const updateableFields = [ 'cook', 'desc', 'directions', 'imgUrl', 'ing', 'prep', 'title'];
+
+  updateableFields.forEach(field => {
+    if(field in req.body) {
+      toUpdate[field] = req.body[field];
+    }
+  });
+
+  /***** Never trust users - validate input *****/
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    const err = new Error('The `id` is not valid');
+    err.status = 400;
+    return next(err);
+  }
+
+  if (toUpdate.title === '') {
+    const err = new Error('Missing `title` in request body');
+    err.status = 400;
+    return next(err);
+  }
+
+  Recipe.findOneAndUpdate({ _id: id}, toUpdate, { new: true})
+    .then(result => {
+      if (result) {
+        res.json(result);
+      } else {
+        next();
+      }
+    })
+    .catch(err => {
+      next(err);
+    });
+
+});
+
+/* ========== DELETE/REMOVE A SINGLE ITEM ========== */
+app.delete('/api/recipes/:id', (req, res, next) => {
+  const { id } = req.params;
+
+  /***** Never trust users - validate input *****/
+  if (!mongoose.Types.ObjectId.isValid(id)) {
+    const err = new Error('The `id` is not valid');
+    err.status = 400;
+    return next(err);
+  }
+
+  Recipe.findOneAndRemove({ _id: id})
+    .then(() => {
+      res.sendStatus(204);
+    })
+    .catch( err => next(err));
+});
 
 
 
