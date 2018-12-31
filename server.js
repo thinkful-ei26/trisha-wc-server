@@ -42,17 +42,16 @@ app.use(express.json());
 
 
 /* ========== GET/READ ALL RECIPES ========== */
-app.get('/api/recipes', (req, res, next) => {
+app.get('/api/recipes/', (req, res, next) => {
   Recipe
     .find()
+    .sort('title')
     .then(recipes => {
       res.json(recipes);
     })
     .catch(
-      err => {
-        console.error(err);
-        res.status(500).json({message: 'Internal server error'});
-      });
+      err => next(err)
+    );
 });
 
 /* ========== GET/READ A SINGLE RECIPE ========== */
@@ -77,6 +76,28 @@ app.get('/api/recipes/:id', (req, res, next) => {
     })
     .catch( err => next(err));
 });
+
+/* ========== POST/CREATE AN ITEM ========== */
+app.post('/api/recipes/', (req, res, next) => {
+  const { cook, desc, directions, imgUrl, ing, prep, title } = req.body;
+
+  /***** Never trust users - validate input *****/
+  if (!title) {
+    const err = new Error('Missing `title` in request body');
+    err.status = 400;
+    return next(err);
+  }
+
+  const newRecipe = { cook, desc, directions, imgUrl, ing, prep, title };
+
+  Recipe.create(newRecipe)
+    .then( result => {
+      res.location(`${req.originalUrl}/${result.id}`).status(201).json(result);
+    })
+    .catch( err => next(err));
+});
+
+
 
 
 // Custom 404 Not Found route handler
