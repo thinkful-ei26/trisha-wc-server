@@ -112,7 +112,7 @@ const recipes = [
   {
     _id: '111111111111111111111106',
     title: 'Gin and tonic',
-    desc: 'Class it up by using high quality gin and tonic. I\'m using Hayman\'s currently and it\'s straight forward,  crisp, balanced, and has a clean finish.',
+    desc: 'Class it up by using high quality gin and tonic. I\'m currently using Hayman\'s London Dry Gin. It\'s a straight forward gin that is crisp, balanced, and has a clean finish.',
     ing: [
       '3 oz gin (2 shots)',
       '4-5 oz tonic water (1/2 cup)',
@@ -124,7 +124,7 @@ const recipes = [
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/Screen-Shot-2018-12-28-at-8.57.12-PM.png',
     prep: '5',
     cook: '5',
-    directions: 'Fill up two high ball glasses with ice. In a cocktail shaker, mix the gin and lime juice. Top off with tonic water and split between two glasses. Garnish with lime wedge or slice',
+    directions: 'Fill up two high ball glasses with ice. In a cocktail shaker, mix the gin and lime juice. Top off with tonic water and split between two glasses. Garnish with a lime wedge.',
     expanded: false
   },
   {

@@ -4,7 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
-
+const bodyParser = require('body-parser');
 const Recipe = require('./models/recipe');
 
 const { PORT, MONGODB_URI, CLIENT_ORIGIN } = require('./config');
@@ -12,7 +12,7 @@ const { PORT, MONGODB_URI, CLIENT_ORIGIN } = require('./config');
 // Create an Express application
 const app = express();
 
-// Log all requests. Skip logging during
+// Log all requests. Skip logging during testing
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'common', {
   skip: () => process.env.NODE_ENV === 'test'
 }));
@@ -30,21 +30,18 @@ app.use(express.static('public'));
 // Parse request body
 app.use(express.json());
 
-//Mount routers/routes
-// app.get('/api/recipes', (req, res) => {
-//   const recipes = [
-//     'Zuchinni Meatballs', 
-//     'Bacon', 
-//     'Empanada'
-//   ];
-//   return res.json(recipes);
-// });
-
-
 /* ========== GET/READ ALL RECIPES ========== */
 app.get('/api/recipes/', (req, res, next) => {
+  const { searchTerm } = req.query;
+  let filter = {};
+
+  if (searchTerm) {
+    const re = new RegExp(searchTerm, 'i');
+    filter.$or = [{ 'title': re }, { 'content': re}];
+  }
+
   Recipe
-    .find()
+    .find(filter)
     .sort('title')
     .then(recipes => {
       res.json(recipes);
@@ -79,6 +76,7 @@ app.get('/api/recipes/:id', (req, res, next) => {
 
 /* ========== POST/CREATE AN ITEM ========== */
 app.post('/api/recipes/', (req, res, next) => {
+  console.log(req.body);
   const { cook, desc, directions, imgUrl, ing, prep, title } = req.body;
 
   /***** Never trust users - validate input *****/
