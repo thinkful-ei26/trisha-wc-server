@@ -4,7 +4,6 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
-const bodyParser = require('body-parser');
 const Recipe = require('./models/recipe');
 
 const { PORT, MONGODB_URI, CLIENT_ORIGIN } = require('./config');
