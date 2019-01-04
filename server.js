@@ -43,7 +43,7 @@ app.get('/api/recipes/', (req, res, next) => {
 
   Recipe
     .find(filter)
-    .sort('id')
+    .sort('title')
     .then(recipes => {
       res.json(recipes);
     })
