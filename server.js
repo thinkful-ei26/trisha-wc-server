@@ -22,8 +22,7 @@ app.use(
   })
 );
 
-// Create a static webserver 
-//this is a test for the server, will replace with react client side)
+//Static webserver is a test, must replace with react client side
 app.use(express.static('public'));
 
 // Parse request body
@@ -31,11 +30,14 @@ app.use(express.json());
 
 /* ========== GET/READ ALL RECIPES ========== */
 app.get('/api/recipes/', (req, res, next) => {
-  const { searchTerm } = req.query;
+  //
+  const { search } = req.query;
   let filter = {};
 
-  if (searchTerm) {
-    const re = new RegExp(searchTerm, 'i');
+  console.log(req.query);
+
+  if (search) {
+    const re = new RegExp(search, 'i');
     filter.$or = [{ 'title': re }, { 'desc': re}];
   }
 
