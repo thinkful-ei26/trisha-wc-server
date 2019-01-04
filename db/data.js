@@ -19,8 +19,8 @@ const recipes = [
     ],
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/zucchini-meatballs.png',
     serving: '4',
-    prep: '15',
-    cook: '45',
+    prep: '15 min',
+    cook: '45 min',
     directions: 'Heat the oven to 375°F. \n Prepare a baking sheet either by spraying it with cooking spray or laying down a silicone mat. \n Start by mixing all of the seasonings: basil, oregano, garlic powder, onion powder, a pinch of salt and pepper. You can optionally add your choice of parmesan cheese. \n Add the rest of the ingredients: beaten egg, breadcrumbs, grated zucchini, and ground turkey. Mix until combined. \n At this point, I usually pan-fry a very small portion to adjust the seasoning of my meatballs. If you\'re happy with the seasoning, shape your meatballs and lay them down on the prepared baking sheet. I use a medium cookie scooper to make this process really easy. \n Bake the meatballs for 20-25 minutes. Serves about 4 people.',
     expanded: false
   },
@@ -43,8 +43,8 @@ const recipes = [
     ],
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/ddukbokki.png',
     serving: '4',
-    prep: '30',
-    cook: '30',
+    prep: '30 min',
+    cook: '30 min',
     directions: 'If you used frozen rice cake, thaw it out first and soak it in cold water to soften before cooking \n To make the anchovy dashi from scratch, remove the heads and the intestines of the anchovies. Don\'t keep them on since it makes the stock bitter. Then, throw the anchovies and kelp in the water and boil over medium heat for 15 minutes. \n While the dashi is simmering, boil your eggs. When I\'m lazy, I just wash the eggs thoroughly and boil them in the dashi. \n Combine the gochujang, soy sauce, and sugar in a small bowl. \n After 15 minutes, remove the anchovies and the kelp from the pot and add the sauce mixture, the rice cakes, and the fish cakes. \n Stir gently and cook until the sauce thickens and looks shiny. About 10-15 minutes. \n Serve hot and garnish with sliced green onion and shredded cheese.',
     expanded: false
   },
@@ -62,8 +62,8 @@ const recipes = [
     ],
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/bacon-scallop-vinegrette.png',
     serving: '2',
-    prep: '10',
-    cook: '15',
+    prep: '10 min',
+    cook: '15 min',
     directions: 'Heat the oven to 425°F. \n Using a paper towel,pat the excess moisture from the scallops. \n Wrap each scallop with a slice of bacon. Depending on the size of your scallop, you may have to cut the bacon slices in 1/2. Secure the bacon with a toothpick. \n Drizzle olive oil over your scallops and season with salt and pepper. \n Place them on a baking sheet lined with parchment paper and bake for 12-15 minutes. \n Garnish under a bed of arugula and drizzled with balsamic vinaigrette reduction. \n Do you want to make your own balsamic vinaigrette reduction? All you have to do is place the balsamic vinaigrette in a small pan and cook it over medium low heat until the vinegar has reduced to atleast half the original amount. It takes about 15 minutes for 1 cup of vinegar to reduce to 1/2 cup.',
     expanded: false
   },
@@ -86,8 +86,8 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/katsu-curry.png',
-    prep: '30',
-    cook: '45',
+    prep: '30 min',
+    cook: '45 min',
     directions: 'Peel and cut the onion, potato and carrot into small bite size pieces. \n Add chopped vegetables to a large pan and fill the pan approximately half-way with water. \n Bring the water to boil and then simmer for 20 minutes or until vegetables are softened. \n While the curry is simmering, prepare the pork by removing all the fat and seasoning with salt and pepper. \n Coat pork with plain flour, cover with raw, beaten egg and then dip in breadcrumbs before deep-frying in vegetable oil. \n Add the udon and 2-3 blocks of curry roux to vegetables. Then simmer for a further 10 minutes. Stir gently until the curry sauce is thick and smooth. \n Serve the curry udon in a bowl with the sliced cooked pork katsu on top. Garnish with a soft boiled egg.',
     expanded: false
   },
@@ -104,9 +104,9 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/raspberry-chambord.jpg',
-    prep: '5',
-    cook: '5',
-    directions: 'Combine the gin, lime juice, Chambord and a cup of ice in a cocktail shaker. Shake vigorously and strain into two 8-10 ounce glasses filled with fresh ice; fill with Club Soda.',
+    prep: '5 min',
+    cook: '5 min',
+    directions: 'Combine the gin, lime juice, Chambord and a cup of ice in a cocktail shaker. \n Shake vigorously and strain into two 8-10 ounce glasses filled with fresh ice. \n Top off with club soda.',
     expanded: false
   },
   {
@@ -122,9 +122,9 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/Screen-Shot-2018-12-28-at-8.57.12-PM.png',
-    prep: '5',
-    cook: '5',
-    directions: 'Fill up two high ball glasses with ice. In a cocktail shaker, mix the gin and lime juice. Top off with tonic water and split between two glasses. Garnish with a lime wedge.',
+    prep: '5 min',
+    cook: '5 min',
+    directions: 'Fill up two high ball glasses with ice. \n In a cocktail shaker, mix the gin and lime juice. \n Top off with tonic water and split between two glasses. \n Garnish with a lime wedge.',
     expanded: false
   },
   {
@@ -144,8 +144,8 @@ const recipes = [
     ],
     serving: '4',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/adobo.jpg',
-    prep: '5',
-    cook: '35',
+    prep: '60 min',
+    cook: '35 min',
     directions: 'In a ziploc or a large bowl, combine the soy sauce, garlic, and chicken. Mix or shake well and marinate the chicken for at least 1 hour. I usually just let it sit in the ziploc overnight. \n In a large flat pan, heat the cooking oil and pan-fry the marinated chicken for 2 minutes each side. \n Pour-in the rest of the marinate, including the garlic. Add water and bring to a boil. \n Add dried bay leaves and whole peppercorn. \n Simmer for 30 minutes or until the chicken gets tender. \n Add vinegar. Stir and cook for 10 minutes. Serve over a bed of white rice or garlic fried rice.',
     expanded: false
   },
@@ -166,7 +166,7 @@ const recipes = [
     ],
     serving: '6',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/munggo.png',
-    prep: '10',
+    prep: '10 min',
     cook: '1 hr 20 mins',
     directions: 'Sort through the mung beans, discarding discolored or shriveled beans and any grit or dirt. Rinse beans in cold, running water until water runs clear. Drain well. \n In a large pot, combine mung beans and water. Over medium heat, bring to a boil skimming froth that floats on top. \n Lower heat, cover, and continue to cook for about 45 to 50 minutes or until beans have softened and skins have burst. Add more water as needed to maintain about 4 cups. \n Add tomatoes and cook, mashing with the back of the spoon, until softened. \n In another pot over medium heat, heat oil. Add onions and garlic and cook until tender and aromatic. \n Add fish sauce and continue to cook for about 1 to 2 minutes. \n  Add cooked mung beans including liquid. Bring to a boil. \n Add pork cracklings and continue to cook until softened. Season with salt and pepper to taste. \n Add spinach, turn off heat and cover pot for about 1 to 2 minutes or until spinach is just wilted. Serve hot.',
     expanded: false
@@ -208,9 +208,9 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/calzone.jpg',
-    prep: '15',
-    cook: '45',
-    directions: 'Preheat oven to 350°F. \n Spray a baking sheet with cooking spray or lay down a silicone mat. Unroll pizza dough onto baking sheet and use a rolling pin or your hands to stretch it into desired calzone size. \n Mix blue cheese and ranch dressing. Spread the dressing mix onto half of the dough. \n Place 6 - 8 chicken bites into the calzone (depending on the size of your pizza dough). \n Sprinkle generously with shredded cheese and close the calzone by folding the dough in half and pinching the edges to seal. \n Brush the top with the egg wash. Bake until golden brown, 20-25 minutes.',
+    prep: '10 min',
+    cook: '20 min',
+    directions: 'Preheat oven to 350°F. \n Spray a baking sheet with cooking spray or lay down a silicone mat. Unroll pizza dough onto baking sheet and use a rolling pin or your hands to stretch it into desired calzone size. \n Mix blue cheese and ranch dressing. Spread the dressing mix onto half of the dough. \n Heat 6 - 8 chicken bites into a plate and microwave for 60 seconds. Then, chop the chicken bites and spead evenly on the calzone. Add more chicken bites depending on the size of your pizza dough. \n Sprinkle the calzone generously with shredded cheese. \n Close the calzone by folding the dough in half and pinching the edges to seal. \n Brush the top with the egg wash and bake for 20-25 minutes until golden brown.',
     expanded: false
   },
   {
@@ -227,8 +227,8 @@ const recipes = [
     ],
     serving: '4',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/dip.jpg',
-    prep: '10',
-    cook: '20',
+    prep: '10 min',
+    cook: '20 min',
     directions: 'Preheat the oven 350°F. Mix all ingredients in a large bowl. Spoon the mixture into a shallow baking dish. \n Top with shredded cheese and bake for 20 minutes or until the top is browned. \n Serve with crackers, veggies, or french bread.',
     expanded: false
   },
@@ -269,8 +269,8 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/quiche.jpg',
-    prep: '10',
-    cook: '45',
+    prep: '10 min',
+    cook: '45 min',
     directions: 'Preheat the oven 375°F. Then line a quart-sized baking dish with tater tots. \n Mix bell peppers, milk alternative, eggs, sausage meat, and seasonings. Transfer to the baking dish. \n Top with shredded dairy-free provolone. \n Bake for 35-45 minutes until the egg mixture is set.',
     expanded: false
   },
@@ -286,8 +286,8 @@ const recipes = [
     ],
     serving: '6',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/refrigerator-cake.jpg',
-    prep: '10',
-    cook: '20',
+    prep: '10 min',
+    cook: '20 min',
     directions: 'Combine condensed milk and table cream and mix thoroughly. Refrigerate for 3 hours to thicken the mixture. \n Arrange a layer of graham crackers in a baking pan or any container of your choice. \n Pour half of the condensed milk and table cream mixture over the arranged graham crackers and spread until the crackers all well covered. \n Arrange some sliced peaches on top of the mixture (you may slice the peaches in half to make it thinner). \n Place another layer of graham crackers over the peaches. \n Pour-in the remaining mixture over the second layer of graham crackers and spread evenly. \n Top the mixture with the remaining sliced peaches. \n Refrigerate overnight.',
     expanded: false
   },
@@ -305,8 +305,8 @@ const recipes = [
     ],
     serving: '6',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/blueberry-cheesecake.jpg',
-    prep: '20',
-    cook: '60',
+    prep: '20 min',
+    cook: '60 min',
     directions: 'Place ladyfingers on the bottom and around the edge of a 9 inch springform pan. \n In a medium bowl, whip cream until peaks form. \n In a large bowl, beat together the cream cheese, sugar and vanilla until smooth. Gently fold in the whipped cream. \n Spoon 1/2 of cream cheese mixture into springform pan; cover with a layer of lady fingers and add remaining cream cheese mixture. \n Layer remaining ladyfingers and top with fruit pie filling. Chill before serving.',
     expanded: false
   },
@@ -325,49 +325,47 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/mai-tai.jpg',
-    prep: '5',
-    cook: '5',
+    prep: '5 min',
+    cook: '5 min',
     directions: 'Add crushed ice into two highball glasses. \n Mix all ingredients in a cocktail mixer and pour evenly.',
     expanded: false
   },
-  // {
-  //   _id: '111111111111111111111117',
-  //   title: 'Easy Baked Brie',
-  //   desc: '',
-  //   ing: [
-  //     '',
-  //     '',
-  //     '',
-  //     '',
-  //     '',
-  //     ''
-  //   ],
-  //   serving: '6',
-  //   imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/baked-brie.jpg',
-  //   prep: '20',
-  //   cook: '60',
-  //   directions: '',
-  //   expanded: false
-  // },
-  // {
-  //   _id: '111111111111111111111118',
-  //   title: 'Homemade Lemon Chicken Noodle',
-  //   desc: '',
-  //   ing: [
-  //     '',
-  //     '',
-  //     '',
-  //     '',
-  //     '',
-  //     ''
-  //   ],
-  //   serving: '6',
-  //   imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/chicken-noodle.jpg',
-  //   prep: '20',
-  //   cook: '60',
-  //   directions: '',
-  //   expanded: false
-  // },
+  {
+    _id: '111111111111111111111117',
+    title: 'Easy Baked Brie',
+    desc: 'My favorite baked brie recipe for the holidays.',
+    ing: [
+      '1 brie cheese wheel',
+      '1 sheet of puff pastry',
+      '1 cranberry jalapeno jam or your choice of jam',
+      'egg wash'
+    ],
+    serving: '4',
+    imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/baked-brie.jpg',
+    prep: '10 min',
+    cook: '30 min',
+    directions: 'Preheat the oven 400°F. \n Spray a baking sheet with cooking spray or lay down a silicone mat. Unroll the puff pastry onto the baking sheet. Stretch until desired length (enough to wrap around the brie wheel). \n Put the brie on the center of the puff pastry and spread the jam generously on top of the brie. \n Pinch the puff pastry close. \n Brush the top of the puff pastry with the egg wash. \n Bake for 25-30 minutes and serve with crackers or veggies.',
+    expanded: false
+  },
+  {
+    _id: '111111111111111111111118',
+    title: 'Homemade Lemon Chicken Noodle Soup',
+    desc: 'When I cook, I don\'t usually measure my ingredients. Especially for something as easy as this chicken noodle soup. So, give this some love.',
+    ing: [
+      '',
+      '',
+      '',
+      '',
+      '',
+      ''
+    ],
+    serving: '6',
+    imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/chicken-noodle.jpg',
+    prep: '20',
+    cook: '60',
+    directions: '',
+    expanded: false
+  },
   // {
   //   _id: '111111111111111111111119',
   //   title: 'Creamy Mushroom Orzo',
@@ -444,8 +442,8 @@ const recipes = [
     ],
     serving: '2',
     imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/Screen-Shot-2018-12-28-at-8.27.58-PM.png',
-    prep: '30',
-    cook: '45',
+    prep: '30 min',
+    cook: '45 min',
     directions: 'Peel and cut the onion, potato and carrot into small bite size pieces. \n Add chopped vegetables to a large pan and fill the pan approximately half-way with water. \n Bring the water to boil and then simmer for 20 minutes or until vegetables are softened. \n Prepare the rice while the curry is simmering. \n Prepare the pork by removing all the fat and seasoning with salt and pepper. -OR- Butterfly the chicken breast to keep the cutlet thin and season generously. \n Coat cutlet with plain flour, cover with raw, beaten egg and then dip in breadcrumbs before deep-frying in vegetable oil. \n Add 2-3 blocks of curry roux to vegetables. Then simmer for a further 10 minutes. Stir gently until the curry sauce is thick and smooth. \n Slice the cooked katsu into thin strips and serve over a bed of rice and curry.',
     expanded: false
   },

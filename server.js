@@ -36,12 +36,12 @@ app.get('/api/recipes/', (req, res, next) => {
 
   if (searchTerm) {
     const re = new RegExp(searchTerm, 'i');
-    filter.$or = [{ 'title': re }, { 'content': re}];
+    filter.$or = [{ 'title': re }, { 'desc': re}];
   }
 
   Recipe
     .find(filter)
-    .sort('title')
+    .sort('id')
     .then(recipes => {
       res.json(recipes);
     })
@@ -81,6 +81,12 @@ app.post('/api/recipes/', (req, res, next) => {
   /***** Never trust users - validate input *****/
   if (!title) {
     const err = new Error('Missing `title` in request body');
+    err.status = 400;
+    return next(err);
+  }
+
+  if (!desc) {
+    const err = new Error('Missing `description` in request body');
     err.status = 400;
     return next(err);
   }

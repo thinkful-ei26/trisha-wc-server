@@ -16,6 +16,7 @@ const recipeSchema = new mongoose.Schema({
   expanded: {type: Boolean, default: false }
 });
 
+//this is like the address 
 recipeSchema.set('toJSON', {
   virtuals: true,
   transform: (doc, result) => {
@@ -23,5 +24,7 @@ recipeSchema.set('toJSON', {
     delete result.__v;
   }
 });
+
+//create serialize method
 
 module.exports = mongoose.model('Recipe', recipeSchema);
