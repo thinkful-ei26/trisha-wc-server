@@ -2,7 +2,7 @@
 
 const express = require('express');
 const mongoose = require('mongoose');
-const Recipe = require('./models/recipe');
+const Recipe = require('../models/recipe');
 const router = express.Router();
 
 
