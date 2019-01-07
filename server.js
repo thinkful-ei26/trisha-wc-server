@@ -52,6 +52,32 @@ app.get('/api/recipes/', (req, res, next) => {
     );
 });
 
+
+/* ========== GET/READ ALL RECIPES ========== */
+app.get('/api/surprise/', (req, res, next) => {
+  //
+  const { search } = req.query;
+  let filter = {};
+
+  console.log(req.query);
+
+  if (search) {
+    const re = new RegExp(search, 'i');
+    filter.$or = [{ 'title': re }, { 'desc': re}];
+  }
+
+  Recipe
+    .findOne()
+    .sort('title')
+    .then(recipes => {
+      res.json(recipes);
+    })
+    .catch(
+      err => next(err)
+    );
+});
+
+
 /* ========== GET/READ A SINGLE RECIPE ========== */
 
 app.get('/api/recipes/:id', (req, res, next) => {
