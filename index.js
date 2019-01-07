@@ -16,6 +16,11 @@ app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'common', {
   skip: () => process.env.NODE_ENV === 'test'
 }));
 
+app.use((req, res, next) => {
+  res.setHeader('Access-Control-Allow-Origin');
+  next();
+});
+
 app.use(
   cors({
     origin: CLIENT_ORIGIN
@@ -30,7 +35,7 @@ app.use(express.json());
 
 /* ========== GET/READ ALL RECIPES ========== */
 app.get('/api/recipes/', (req, res, next) => {
-  //
+  res.setHeader('Access-Control-Allow-Origin');
   const { search } = req.query;
   let filter = {};
 

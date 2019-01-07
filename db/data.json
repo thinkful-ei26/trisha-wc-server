@@ -1,0 +1,412 @@
+{
+  "_id" : {"$oid":"111111111111111111111101"},
+  "ing" : [ 
+      "1 lb of ground turkey", 
+      "1 cup -or- 1 medium sized grated zucchini (drained of excess liquid)", 
+      "1/2 tsp basil", 
+      "1/2 tsp oregano", 
+      "1/2 tsp garlic powder", 
+      "1/2 tsp onion powder", 
+      "1/4 cup vegan parmesan cheese or Pecorino Romano (optional)", 
+      "1 beated egg or egg substitute", 
+      "1/2 cup breadcrumbs", 
+      "salt and pepper to taste"
+  ],
+  "expanded" : false,
+  "title" : "Turkey Zucchini Meatballs",
+  "desc" : "A quick recipe for healthy turkey meatballs with grated zucchini.",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/zucchini-meatballs.png",
+  "serving" : "4",
+  "prep" : "15 min",
+  "cook" : "45 min",
+  "directions" : "Heat the oven to 375°F. \n Prepare a baking sheet either by spraying it with cooking spray or laying down a silicone mat. \n Start by mixing all of the seasonings: basil, oregano, garlic powder, onion powder, a pinch of salt and pepper. You can optionally add your choice of parmesan cheese. \n Add the rest of the ingredients: beaten egg, breadcrumbs, grated zucchini, and ground turkey. Mix until combined. \n At this point, I usually pan-fry a very small portion to adjust the seasoning of my meatballs. If you're happy with the seasoning, shape your meatballs and lay them down on the prepared baking sheet. I use a medium cookie scooper to make this process really easy. \n Bake the meatballs for 20-25 minutes. Serves about 4 people."
+}
+{
+  "_id" :{"$oid":"111111111111111111111102"},
+  "ing" : [ 
+      "6 oz or about 1 cup of tteok (Korean rice cake)", 
+      "4 cups of water", 
+      "7 large size dried anchovies, heads and intestines removed", 
+      "6 x 8 inch of dried kelp", 
+      "1 tbsp gochujang sauce (Korean hot pepper paste)", 
+      "1 tbsp soy sauce", 
+      "1 tbsp sugar", 
+      "3 oz fish cake", 
+      "1 green onion, sliced", 
+      "2 hard boiled egg (optional)", 
+      "1/2 cup shredded cheddar cheese, (optional)"
+  ],
+  "expanded" : false,
+  "title" : "Spicy Rice Cake (Tteokbokki 떡볶이 or Ddukbokki)",
+  "desc" : "Classic Korean spicy rice cake with hard boiled eggs and fish cakes. Recipe adapted from Maangchi.",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/ddukbokki.png",
+  "serving" : "4",
+  "prep" : "30 min",
+  "cook" : "30 min",
+  "directions" : "If you used frozen rice cake, thaw it out first and soak it in cold water to soften before cooking \n To make the anchovy dashi from scratch, remove the heads and the intestines of the anchovies. Don't keep them on since it makes the stock bitter. Then, throw the anchovies and kelp in the water and boil over medium heat for 15 minutes. \n While the dashi is simmering, boil your eggs. When I'm lazy, I just wash the eggs thoroughly and boil them in the dashi. \n Combine the gochujang, soy sauce, and sugar in a small bowl. \n After 15 minutes, remove the anchovies and the kelp from the pot and add the sauce mixture, the rice cakes, and the fish cakes. \n Stir gently and cook until the sauce thickens and looks shiny. About 10-15 minutes. \n Serve hot and garnish with sliced green onion and shredded cheese."
+}
+
+/* 3 */
+{
+  "_id" : {"$oid":"111111111111111111111103"},
+  "ing" : [ 
+      "6 scallops", 
+      "6 slices of bacon", 
+      "A handful of arugula leaves", 
+      "Balsamic vinaigrette reduction", 
+      "Salt and pepper to taste", 
+      "Extra virgin olive oil"
+  ],
+  "expanded" : false,
+  "title" : "Bacon Wrapped Scallop with Balsamic Vinaigrette Reduction",
+  "desc" : "Delicious and easy bacon scallop.",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/bacon-scallop-vinegrette.png",
+  "serving" : "2",
+  "prep" : "10 min",
+  "cook" : "15 min",
+  "directions" : "Heat the oven to 425°F. \n Using a paper towel,pat the excess moisture from the scallops. \n Wrap each scallop with a slice of bacon. Depending on the size of your scallop, you may have to cut the bacon slices in 1/2. Secure the bacon with a toothpick. \n Drizzle olive oil over your scallops and season with salt and pepper. \n Place them on a baking sheet lined with parchment paper and bake for 12-15 minutes. \n Garnish under a bed of arugula and drizzled with balsamic vinaigrette reduction. \n Do you want to make your own balsamic vinaigrette reduction? All you have to do is place the balsamic vinaigrette in a small pan and cook it over medium low heat until the vinegar has reduced to atleast half the original amount. It takes about 15 minutes for 1 cup of vinegar to reduce to 1/2 cup.",
+}
+
+/* 4 */
+{
+  "_id" : {"$oid":"111111111111111111111104"},
+  "ing" : [ 
+      "2 thin pork loins (thin pork chop cuts)", 
+      "4 tbsp plain flour", 
+      "1 beaten egg", 
+      "1/2 cup panko breadcrumbs", 
+      "Vegetable oil for deep-frying", 
+      "1 small onion, diced", 
+      "1 carrot, sliced into bite sized pieces", 
+      "2-3 cubes of Japanese curry", 
+      "2-2½ cups of water", 
+      "1 package of thawed or fresh udon (Japanese thick noodles)", 
+      "2 soft-boiled egg (optional)"
+  ],
+  "expanded" : false,
+  "title" : "Japanese Pork Cutlet with Curry Noodles (Tonkatsu Curry Noodles)",
+  "desc" : "Japanese pork cutlet with curry noodles",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/katsu-curry.png",
+  "prep" : "30 min",
+  "cook" : "45 min",
+  "directions" : "Peel and cut the onion, potato and carrot into small bite size pieces. \n Add chopped vegetables to a large pan and fill the pan approximately half-way with water. \n Bring the water to boil and then simmer for 20 minutes or until vegetables are softened. \n While the curry is simmering, prepare the pork by removing all the fat and seasoning with salt and pepper. \n Coat pork with plain flour, cover with raw, beaten egg and then dip in breadcrumbs before deep-frying in vegetable oil. \n Add the udon and 2-3 blocks of curry roux to vegetables. Then simmer for a further 10 minutes. Stir gently until the curry sauce is thick and smooth. \n Serve the curry udon in a bowl with the sliced cooked pork katsu on top. Garnish with a soft boiled egg."
+}
+
+/* 5 */
+{
+  "_id" : {"$oid":"111111111111111111111105"},
+  "ing" : [ 
+      "3 oz of gin (about 2 shots)", 
+      "1½ oz of lime juice ", 
+      "1 oz chambord liquer", 
+      "Club soda to fill", 
+      "Ice"
+  ],
+  "expanded" : false,
+  "title" : "Gin & Raspberry Chambord",
+  "desc" : "I love gin and chambord. So why not mix them together? Perfect for a fizzy and classy drink.",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/raspberry-chambord.jpg",
+  "prep" : "5 min",
+  "cook" : "5 min",
+  "directions" : "Combine the gin, lime juice, Chambord and a cup of ice in a cocktail shaker. \n Shake vigorously and strain into two 8-10 ounce glasses filled with fresh ice. \n Top off with club soda."
+}
+
+/* 6 */
+{
+  "_id" : {"$oid":"111111111111111111111106"},
+  "ing" : [ 
+      "3 oz gin (2 shots)", 
+      "4-5 oz tonic water (1/2 cup)", 
+      "1/2 oz of fresh lime juice (1 tbps)", 
+      "ice", 
+      "lime wedge"
+  ],
+  "expanded" : false,
+  "title" : "Gin and tonic",
+  "desc" : "Class it up by using high quality gin and tonic. I'm currently using Hayman's London Dry Gin. It's a straight forward gin that is crisp, balanced, and has a clean finish.",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/Screen-Shot-2018-12-28-at-8.57.12-PM.png",
+  "prep" : "5 min",
+  "cook" : "5 min",
+  "directions" : "Fill up two high ball glasses with ice. \n In a cocktail shaker, mix the gin and lime juice. \n Top off with tonic water and split between two glasses. \n Garnish with a lime wedge."
+}
+
+/* 7 */
+{
+  "_id" : {"$oid":"111111111111111111111107"},
+  "ing" : [ 
+      "2 lbs chicken", 
+      "3 pieces of dried bay leaves", 
+      "8 tbsp of soy sauce", 
+      "4 tbsp of white vinegar", 
+      "5 cloves of crushed garlic", 
+      "1½ cups of water", 
+      "3 tbsp of vegetable oil", 
+      "1/4 tsp of salt", 
+      "1 tsp of whole peppercorns"
+  ],
+  "expanded" : false,
+  "title" : "Chicken Adobo",
+  "desc" : "Filipino tender chicken stew made primarily with soy sauce, vinegar, garlic, and bay leaf. Served over a bed of white rice. This recipe was adapted from PanlasangPinoy.com. I've added my own twist to it.",
+  "serving" : "4",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/adobo.jpg",
+  "prep" : "60 min",
+  "cook" : "35 min",
+  "directions" : "In a ziploc or a large bowl, combine the soy sauce, garlic, and chicken. Mix or shake well and marinate the chicken for at least 1 hour. I usually just let it sit in the ziploc overnight. \n In a large flat pan, heat the cooking oil and pan-fry the marinated chicken for 2 minutes each side. \n Pour-in the rest of the marinate, including the garlic. Add water and bring to a boil. \n Add dried bay leaves and whole peppercorn. \n Simmer for 30 minutes or until the chicken gets tender. \n Add vinegar. Stir and cook for 10 minutes. Serve over a bed of white rice or garlic fried rice."
+}
+
+/* 8 */
+{
+  "_id" : {"$oid":"111111111111111111111108"},
+  "ing" : [ 
+      "1 cup dried mung beans", 
+      "6 cups water", 
+      "1 tablespoon vegetable oil", 
+      "1 onion, peeled and sliced thinly", 
+      "3 cloves garlic, peeled and minced", 
+      "1 large tomato, chopped", 
+      "2 cups chicharon (pork cracklings)", 
+      "1 bunch fresh spinach, stems trimmed", 
+      "1 tablespoon fish sauce"
+  ],
+  "expanded" : false,
+  "title" : "Ginisang Munggo at Chicharon (Mung Bean Stew with Pork Cracklings)",
+  "desc" : "Hands-down my favorite Filipino dish to eat. Recipe adapted from KawalingPinoy.com. The mung beans absorb a lot of water so feel free to add more as the mung beans simmer. You may have to presoak the mung beans to soften it a little.",
+  "serving" : "6",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/munggo.png",
+  "prep" : "10 min",
+  "cook" : "1 hr 20 mins",
+  "directions" : "Sort through the mung beans, discarding discolored or shriveled beans and any grit or dirt. Rinse beans in cold, running water until water runs clear. Drain well. \n In a large pot, combine mung beans and water. Over medium heat, bring to a boil skimming froth that floats on top. \n Lower heat, cover, and continue to cook for about 45 to 50 minutes or until beans have softened and skins have burst. Add more water as needed to maintain about 4 cups. \n Add tomatoes and cook, mashing with the back of the spoon, until softened. \n In another pot over medium heat, heat oil. Add onions and garlic and cook until tender and aromatic. \n Add fish sauce and continue to cook for about 1 to 2 minutes. \n  Add cooked mung beans including liquid. Bring to a boil. \n Add pork cracklings and continue to cook until softened. Season with salt and pepper to taste. \n Add spinach, turn off heat and cover pot for about 1 to 2 minutes or until spinach is just wilted. Serve hot."
+}
+
+/* 9 */
+{
+  "_id" : {"$oid":"111111111111111111111109"},
+  "ing" : [ 
+      "1½ lbs. ground beef", 
+      "1 medium onion minced", 
+      "3 to 4 tablespoons olive oil", 
+      "1 cup beef broth or 1 knorr beef stock cube", 
+      "1 large potato cubed", 
+      "1 carrot cubed", 
+      "1 carrot cubed", 
+      "1 cup tomato sauce", 
+      "1 tsp fish sauce", 
+      "Salt and pepper to taste"
+  ],
+  "expanded" : false,
+  "title" : "Picadillo",
+  "desc" : "My Mom's picadillo recipe. It's made out of ground meat, potato, and onions. Served over white rice.",
+  "serving" : "4",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/picadillo.png",
+  "prep" : "10 mins",
+  "cook" : "50 mins",
+  "directions" : "In a large flat pan, heat the cooking oil and saute the minced onion until it becomes soft and translucent. \n Slowly add the ground beef. Cook until it turns light brown. \n Add the potatoes, the beef broth/cube and the tomato sauce. Stir and let boil. \n Cover and cook for 15 minutes stirring occasionally. Cook for and additional 10 to 15 minutes. \n Season salt and pepper and serve with rice.",
+  "__v" : 0
+}
+
+/* 10 */
+{
+  "_id" : {"$oid":"111111111111111111111110"},
+  "ing" : [ 
+      "Store-bought pizza dough, thawed", 
+      "Tyson's Anytizers Boneless Hot Wings Chicken Bites or any boneless buffalo chicken wings", 
+      "1/2 cup shredded cheddar cheese", 
+      "1/4 cup blue cheese dressing", 
+      "1/4 cup ranch dressing", 
+      "1 beaten egg wash"
+  ],
+  "expanded" : false,
+  "title" : "30 minute Buffalo Chicken Calzone",
+  "desc" : "My partner's favorite calzone. Super easy to make.",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/calzone.jpg",
+  "prep" : "10 min",
+  "cook" : "20 min",
+  "directions" : "Preheat oven to 350°F. \n Spray a baking sheet with cooking spray or lay down a silicone mat. Unroll pizza dough onto baking sheet and use a rolling pin or your hands to stretch it into desired calzone size. \n Mix blue cheese and ranch dressing. Spread the dressing mix onto half of the dough. \n Heat 6 - 8 chicken bites into a plate and microwave for 60 seconds. Then, chop the chicken bites and spead evenly on the calzone. Add more chicken bites depending on the size of your pizza dough. \n Sprinkle the calzone generously with shredded cheese. \n Close the calzone by folding the dough in half and pinching the edges to seal. \n Brush the top with the egg wash and bake for 20-25 minutes until golden brown.",
+  "__v" : 0
+}
+
+/* 11 */
+{
+  "_id" : {"$oid":"111111111111111111111111"},
+  "ing" : [ 
+      "2 cups shredded cooked chicken", 
+      "1 (8 oz package) cream cheese", 
+      "1/2 cup Frank's RedHot Buffalo Wings Sauce", 
+      "1/2 cup ranch dressing", 
+      "1/2 cup blue cheese dressing", 
+      "1/2 cup shredded cheese of choice"
+  ],
+  "expanded" : false,
+  "title" : "Frank's RedHot Buffalo Chicken Dip",
+  "desc" : "A staple appetizer in the house. Easy crowd pleasing baked buffalo chicken dip. Adapted from FranksRedHot.com",
+  "serving" : "4",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/dip.jpg",
+  "prep" : "10 min",
+  "cook" : "20 min",
+  "directions" : "Preheat the oven 350°F. Mix all ingredients in a large bowl. Spoon the mixture into a shallow baking dish. \n Top with shredded cheese and bake for 20 minutes or until the top is browned. \n Serve with crackers, veggies, or french bread.",
+  "__v" : 0
+}
+
+/* 12 */
+{
+  "_id" : {"$oid":"111111111111111111111112"},
+  "ing" : [ 
+      "1½ lbs beef sirloin thinly sliced", 
+      "1/3 cup soy sauce", 
+      "1/2 freshly squeezed lemon", 
+      "1 medium onion sliced into rings", 
+      "1/4 cup cooking oil", 
+      "1 cup water", 
+      "salt and pepper to taste"
+  ],
+  "expanded" : false,
+  "title" : "Bistek Tagalog",
+  "desc" : "Also known as Beefsteak. This quick and easy beef sirloin marinade pairs well with rice.",
+  "serving" : "4",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/bistek.jpg",
+  "prep" : "1 hour",
+  "cook" : "40 mins",
+  "directions" : "Marinate the beef in soy sauce, lemon, and ground black pepper for at least 1 hour. Marinade overnight for best results. \n In a pan, heat the oil and sautee 1/2 of the onion rings until it becomes translucent and soft. Set aside. \n Drain the marinade from the beef and set the marinade aside for later. \n Pan-fry the beef on the same pan where the onions were fried for 1 minute per side. Remove from the pan. Set aside \n Add more oil if needed. Saute garlic and remaining raw onions until onion softens. \n Pour the remaining marinade and water. Bring to a boil. \n Add beef. Cover the pan and simmer until meat is tender. Note: Add water as needed. \n Season with ground black pepper and salt as needed. Top with pan-fried onions. Serve with rice.",
+  "__v" : 0
+}
+
+/* 13 */
+{
+  "_id" : {"$oid":"111111111111111111111113"},
+  "ing" : [ 
+      "1/2 cup diced bell peppers", 
+      "1-1½ cup tater tots", 
+      "1/4 cup cashew or almond milk", 
+      "4 beaten eggs", 
+      "1/2 cup spicy sausage meat", 
+      "2 slices of dairy-free provolone cheese (Daiya brand), optional", 
+      "a pinch of cayenne", 
+      "a pinch of paprika", 
+      "salt and pepper to taste"
+  ],
+  "expanded" : false,
+  "title" : "Dairy-free Spicy Sausage and Tater Tot Quiche",
+  "desc" : "You can prep the quiche mix the night before and then cook it in the morning.",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/quiche.jpg",
+  "prep" : "10 min",
+  "cook" : "45 min",
+  "directions" : "Preheat the oven 375°F. Then line a quart-sized baking dish with tater tots. \n Mix bell peppers, milk alternative, eggs, sausage meat, and seasonings. Transfer to the baking dish. \n Top with shredded dairy-free provolone. \n Bake for 35-45 minutes until the egg mixture is set.",
+  "__v" : 0
+}
+
+/* 14 */
+{
+  "_id" : {"$oid":"111111111111111111111114"},
+  "ing" : [ 
+      "1 can sliced peaches", 
+      "1 can (14 oz) condensed milk", 
+      "8 oz table or all purpose cream", 
+      "8 to 12 pieces graham crackers"
+  ],
+  "expanded" : false,
+  "title" : "No-Bake Peach Refigerator Cake",
+  "desc" : "I've shared this recipe to my co-workers. They love it! This is my mom's favorite and is a classic Filipino party dessert",
+  "serving" : "6",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/refrigerator-cake.jpg",
+  "prep" : "10 min",
+  "cook" : "20 min",
+  "directions" : "Combine condensed milk and table cream and mix thoroughly. Refrigerate for 3 hours to thicken the mixture. \n Arrange a layer of graham crackers in a baking pan or any container of your choice. \n Pour half of the condensed milk and table cream mixture over the arranged graham crackers and spread until the crackers all well covered. \n Arrange some sliced peaches on top of the mixture (you may slice the peaches in half to make it thinner). \n Place another layer of graham crackers over the peaches. \n Pour-in the remaining mixture over the second layer of graham crackers and spread evenly. \n Top the mixture with the remaining sliced peaches. \n Refrigerate overnight.",
+  "__v" : 0
+}
+
+/* 15 */
+{
+  "_id" : {"$oid":"111111111111111111111115"},
+  "ing" : [ 
+      "2 (8 oz) cream cheese, softened", 
+      "1 cup white sugar", 
+      "1 (21oz) can blueberry pie filling", 
+      "1 (8oz) cool whip", 
+      "1 tsp vanilla extract", 
+      "1 store-bought graham cracker pie crust"
+  ],
+  "expanded" : false,
+  "title" : "No-Bake Blueberry Cheesecake",
+  "desc" : "My go-to recipe for a quick and easy no-bake cheesecake",
+  "serving" : "6",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/blueberry-cheesecake.jpg",
+  "prep" : "20 min",
+  "cook" : "60 min",
+  "directions" : "Place ladyfingers on the bottom and around the edge of a 9 inch springform pan. \n In a medium bowl, whip cream until peaks form. \n In a large bowl, beat together the cream cheese, sugar and vanilla until smooth. Gently fold in the whipped cream. \n Spoon 1/2 of cream cheese mixture into springform pan; cover with a layer of lady fingers and add remaining cream cheese mixture. \n Layer remaining ladyfingers and top with fruit pie filling. Chill before serving.",
+  "__v" : 0
+}
+
+/* 16 */
+{
+  "_id" : {"$oid":"111111111111111111111116"},
+  "ing" : [ 
+      "1 oz freshly squeezed lime juice", 
+      "1/2 oz orange Curaçao", 
+      "1/4 oz orgeat syrup", 
+      "1/4 oz simple syrup", 
+      "1 oz dark Jamaican rum", 
+      "1 oz Martinique agricole rum", 
+      "Crushed ice"
+  ],
+  "expanded" : false,
+  "title" : "Trader Vic's Mai Tai",
+  "desc" : "My partner's uncle made this for us on Christmas Eve. This drink is for you if you like less sugary mai-tai that's got a smooth and balanced finish.",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/mai-tai.jpg",
+  "prep" : "5 min",
+  "cook" : "5 min",
+  "directions" : "Add crushed ice into two highball glasses. \n Mix all ingredients in a cocktail mixer and pour evenly.",
+  "__v" : 0
+}
+
+/* 17 */
+{
+  "_id" : {"$oid":"111111111111111111111117"},
+  "ing" : [ 
+      "1 brie cheese wheel", 
+      "1 sheet of puff pastry", 
+      "1 cranberry jalapeno jam or your choice of jam", 
+      "egg wash"
+  ],
+  "expanded" : false,
+  "title" : "Easy Baked Brie",
+  "desc" : "My favorite baked brie recipe for the holidays.",
+  "serving" : "4",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/baked-brie.jpg",
+  "prep" : "10 min",
+  "cook" : "30 min",
+  "directions" : "Preheat the oven 400°F. \n Spray a baking sheet with cooking spray or lay down a silicone mat. Unroll the puff pastry onto the baking sheet. Stretch until desired length (enough to wrap around the brie wheel). \n Put the brie on the center of the puff pastry and spread the jam generously on top of the brie. \n Pinch the puff pastry close. \n Brush the top of the puff pastry with the egg wash. \n Bake for 25-30 minutes and serve with crackers or veggies.",
+  "__v" : 0
+}
+
+/* 18 */
+{
+  "_id" : {"$oid":"111111111111111111111118"},
+  "ing" : [ 
+      "2 thin pork loins or 2 thin chicken breast", 
+      "4 tbsp plain flour", 
+      "1 beaten egg", 
+      "1/2 cup panko breadcrumbs", 
+      "Vegetable oil for deep-frying", 
+      "1 small onion, diced", 
+      "2 big potato cut into bite sized pieces", 
+      "1 carrot, sliced into bite sized pieces", 
+      "2-3 cubes of Japanese curry", 
+      "2-2½ cups of water", 
+      "Long-grain rice (ex: jasmine rice)"
+  ],
+  "expanded" : false,
+  "title" : "Katsu Curry カツカレー (Japanese Curry with Fried Chicken or Pork Cutlets)",
+  "desc" : "Wholesome and rich curry served with deep-fried chicken or pork cutlets over a bed of rice.",
+  "serving" : "2",
+  "imgUrl" : "https://sweettootsco.files.wordpress.com/2018/12/Screen-Shot-2018-12-28-at-8.27.58-PM.png",
+  "prep" : "30 min",
+  "cook" : "45 min",
+  "directions" : "Peel and cut the onion, potato and carrot into small bite size pieces. \n Add chopped vegetables to a large pan and fill the pan approximately half-way with water. \n Bring the water to boil and then simmer for 20 minutes or until vegetables are softened. \n Prepare the rice while the curry is simmering. \n Prepare the pork by removing all the fat and seasoning with salt and pepper. -OR- Butterfly the chicken breast to keep the cutlet thin and season generously. \n Coat cutlet with plain flour, cover with raw, beaten egg and then dip in breadcrumbs before deep-frying in vegetable oil. \n Add 2-3 blocks of curry roux to vegetables. Then simmer for a further 10 minutes. Stir gently until the curry sauce is thick and smooth. \n Slice the cooked katsu into thin strips and serve over a bed of rice and curry.",
+  "__v" : 0
+}
