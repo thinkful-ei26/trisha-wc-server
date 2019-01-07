@@ -2,10 +2,10 @@
   "name": "whats-cooking-server",
   "version": "1.0.0",
   "description": "What's Cooking App ",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "test": "mocha --timeout 5000",
-    "start": "node index.js"
+    "start": "node server.js"
   },
   "author": "Trisha Aguinaldo",
   "license": "ISC",
