@@ -6,7 +6,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 const Recipe = require('./models/recipe');
 
-const { PORT, MONGODB_URI, CLIENT_ORIGIN } = require('./config');
+const { PORT, DATABASE_URL, CLIENT_ORIGIN } = require('./config');
 
 // Create an Express application
 const app = express();
@@ -15,11 +15,6 @@ const app = express();
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'common', {
   skip: () => process.env.NODE_ENV === 'test'
 }));
-
-// app.use((req, res, next) => {
-//   res.setHeader('Access-Control-Allow-Origin');
-//   next();
-// });
 
 app.use(
   cors({
@@ -56,32 +51,6 @@ app.get('/api/recipes/', (req, res, next) => {
       err => next(err)
     );
 });
-
-
-/* ========== GET/READ ALL RECIPES ========== */
-app.get('/api/surprise/', (req, res, next) => {
-  //
-  const { search } = req.query;
-  let filter = {};
-
-  console.log(req.query);
-
-  if (search) {
-    const re = new RegExp(search, 'i');
-    filter.$or = [{ 'title': re }, { 'desc': re}];
-  }
-
-  Recipe
-    .findOne()
-    .sort('title')
-    .then(recipes => {
-      res.json(recipes);
-    })
-    .catch(
-      err => next(err)
-    );
-});
-
 
 /* ========== GET/READ A SINGLE RECIPE ========== */
 
@@ -190,8 +159,6 @@ app.delete('/api/recipes/:id', (req, res, next) => {
     .catch( err => next(err));
 });
 
-
-
 // Custom 404 Not Found route handler
 app.use((req, res, next) => {
   const err = new Error('Not Found');
@@ -213,7 +180,7 @@ app.use((err, req, res, next) => {
 // Listen for incoming connections
 if (require.main === module) { //prevents server from automatically running when we run tests
   // Connect to DB and Listen for incoming connections
-  mongoose.connect(MONGODB_URI)
+  mongoose.connect(DATABASE_URL, { useNewUrlParser:true })
     .then(instance => {
       const conn = instance.connections[0];
       console.info(`Connected to: mongodb://${conn.host}:${conn.port}/${conn.name}`);
