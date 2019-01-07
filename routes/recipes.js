@@ -3,11 +3,11 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const Recipe = require('./models/recipe');
-const app = express.Router();
+const router = express.Router();
 
 
 /* ========== GET/READ ALL RECIPES ========== */
-app.get('/api/recipes/', (req, res, next) => {
+router.get('/', (req, res, next) => {
   // res.setHeader('Access-Control-Allow-Origin');
   const { search } = req.query;
   let filter = {};
@@ -32,7 +32,7 @@ app.get('/api/recipes/', (req, res, next) => {
 
 /* ========== GET/READ A SINGLE RECIPE ========== */
 
-app.get('/api/recipes/:id', (req, res, next) => {
+router.get('/:id', (req, res, next) => {
   const { id } = req.params;
 
   /***** Never trust users - validate input *****/
@@ -54,7 +54,7 @@ app.get('/api/recipes/:id', (req, res, next) => {
 });
 
 /* ========== POST/CREATE AN ITEM ========== */
-app.post('/api/recipes/', (req, res, next) => {
+router.post('/', (req, res, next) => {
   console.log(req.body);
   const { cook, desc, directions, imgUrl, ing, prep, title } = req.body;
 
@@ -81,7 +81,7 @@ app.post('/api/recipes/', (req, res, next) => {
 });
 
 /* ========== PUT/UPDATE A SINGLE ITEM ========== */
-app.put('/api/recipes/:id', (req, res, next) => {
+router.put('/:id', (req, res, next) => {
   const { id } = req.params;
   const toUpdate = {};
   const updateableFields = [ 'cook', 'desc', 'directions', 'imgUrl', 'ing', 'prep', 'title'];
@@ -120,7 +120,7 @@ app.put('/api/recipes/:id', (req, res, next) => {
 });
 
 /* ========== DELETE/REMOVE A SINGLE ITEM ========== */
-app.delete('/api/recipes/:id', (req, res, next) => {
+router.delete('/:id', (req, res, next) => {
   const { id } = req.params;
 
   /***** Never trust users - validate input *****/
@@ -136,6 +136,5 @@ app.delete('/api/recipes/:id', (req, res, next) => {
     })
     .catch( err => next(err));
 });
-
 
 module.exports = router;

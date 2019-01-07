@@ -7,6 +7,8 @@ const cors = require('cors');
 
 const { PORT, DATABASE_URL, CLIENT_ORIGIN } = require('./config');
 
+const recipesRouter = require('./routes/recipes');
+
 // Create an Express application
 const app = express();
 
@@ -27,6 +29,8 @@ app.use(express.static('public'));
 // Parse request body
 app.use(express.json());
 
+// Mount routers
+app.use('/api/recipes', recipesRouter); 
 
 // Custom 404 Not Found route handler
 app.use((req, res, next) => {
