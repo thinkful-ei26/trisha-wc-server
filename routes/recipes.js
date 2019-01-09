@@ -5,10 +5,8 @@ const mongoose = require('mongoose');
 const Recipe = require('../models/recipe');
 const router = express.Router();
 
-
 /* ========== GET/READ ALL RECIPES ========== */
 router.get('/', (req, res, next) => {
-  // res.setHeader('Access-Control-Allow-Origin');
   const { search } = req.query;
   let filter = {};
 

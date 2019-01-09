@@ -347,25 +347,25 @@ const recipes = [
     directions: 'Preheat the oven 400°F. \n Spray a baking sheet with cooking spray or lay down a silicone mat. Unroll the puff pastry onto the baking sheet. Stretch until desired length (enough to wrap around the brie wheel). \n Put the brie on the center of the puff pastry and spread the jam generously on top of the brie. \n Pinch the puff pastry close. \n Brush the top of the puff pastry with the egg wash. \n Bake for 25-30 minutes and serve with crackers or veggies.',
     expanded: false
   },
-  {
-    _id: '111111111111111111111118',
-    title: 'Homemade Lemon Chicken Noodle Soup',
-    desc: 'When I cook, I don\'t usually measure my ingredients. Especially for something as easy as this chicken noodle soup. So, give this some love.',
-    ing: [
-      '',
-      '',
-      '',
-      '',
-      '',
-      ''
-    ],
-    serving: '6',
-    imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/chicken-noodle.jpg',
-    prep: '20',
-    cook: '60',
-    directions: '',
-    expanded: false
-  },
+  // {
+  //   _id: '111111111111111111111118',
+  //   title: 'Homemade Lemon Chicken Noodle Soup',
+  //   desc: 'When I cook, I don\'t usually measure my ingredients. Especially for something as easy as this chicken noodle soup. So, give this some love.',
+  //   ing: [
+  //     '',
+  //     '',
+  //     '',
+  //     '',
+  //     '',
+  //     ''
+  //   ],
+  //   serving: '6',
+  //   imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/chicken-noodle.jpg',
+  //   prep: '20',
+  //   cook: '60',
+  //   directions: '',
+  //   expanded: false
+  // },
   // {
   //   _id: '111111111111111111111119',
   //   title: 'Creamy Mushroom Orzo',

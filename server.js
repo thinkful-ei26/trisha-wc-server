@@ -4,6 +4,7 @@ const express = require('express');
 const morgan = require('morgan');
 const mongoose = require('mongoose');
 const cors = require('cors');
+const bodyParser = require('body-parser');
 
 const { PORT, DATABASE_URL, CLIENT_ORIGIN } = require('./config');
 
@@ -11,6 +12,8 @@ const recipesRouter = require('./routes/recipes');
 
 // Create an Express application
 const app = express();
+
+app.use(bodyParser.json());
 
 // Log all requests. Skip logging during testing
 app.use(morgan(process.env.NODE_ENV === 'development' ? 'dev' : 'common', {
