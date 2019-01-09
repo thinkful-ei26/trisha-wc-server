@@ -226,6 +226,34 @@ describe('What\'s Cooking API - Recipes', () => {
         });
     });
 
+    it('should return an error when missing "desc" field', () => {
+      const newRecipe = {
+        ing: [
+          'Store-bought pizza dough, thawed',
+          'Tyson\'s Anytizers Boneless Hot Wings Chicken Bites or any boneless buffalo chicken wings',
+          '1/2 cup shredded cheddar cheese',
+          '1/4 cup blue cheese dressing',
+          '1/4 cup ranch dressing',
+          '1 beaten egg wash'
+        ],
+        title: 'New Recipe Title',
+        serving: '2',
+        imgUrl: 'https://sweettootsco.files.wordpress.com/2018/12/calzone.jpg',
+        prep: '10 min',
+        cook: '20 min',
+        directions: 'Bacon ipsum dolor amet pancetta venison t-bone porchetta bresaola tail picanha, prosciutto corned beef drumstick. '
+      };
+      return chai.request(app)
+        .post('/api/recipes')
+        .send(newRecipe)
+        .then(res => {
+          expect(res).to.have.status(400);
+          expect(res).to.be.json;
+          expect(res.body).to.be.a('object');
+          expect(res.body.message).to.equal('Missing `description` in request body');
+        });
+    });
+
     it('should return an error when "title" is empty string', () => {
       const newRecipe = { title: '' };
       return chai.request(app)
@@ -271,9 +299,8 @@ describe('What\'s Cooking API - Recipes', () => {
         });
     });
 
+  //end of recipes POST test
   });
-
-
 
 
 //end of test
