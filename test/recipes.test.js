@@ -4,7 +4,6 @@
 const chai = require('chai');
 const chaiHttp = require('chai-http');
 const mongoose = require('mongoose');
-const express = require('express');
 const sinon = require('sinon');
 
 //connect to server
@@ -37,11 +36,7 @@ describe('What\'s Cooking API - Recipes', () => {
   beforeEach( () => {
     return Promise.all([
       Recipe.insertMany(recipes)
-    ])
-      .then( results => {
-        // console.log(results);
-        return results;
-      });
+    ]);
   });
 
   afterEach(() => {
