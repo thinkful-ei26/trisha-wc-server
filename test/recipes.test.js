@@ -37,7 +37,11 @@ describe('What\'s Cooking API - Recipes', () => {
   beforeEach( () => {
     return Promise.all([
       Recipe.insertMany(recipes)
-    ]);
+    ])
+      .then( results => {
+        // console.log(results);
+        return results;
+      });
   });
 
   afterEach(() => {
@@ -176,7 +180,7 @@ describe('What\'s Cooking API - Recipes', () => {
         .send(newRecipe)
         .then( (_res) => {
           res = _res;
-          console.log('res.body',res.body);
+          // console.log('res.body',res.body);
           expect(res).to.have.status(201);
           expect(res).to.have.header('location');
           expect(res).to.be.json;
