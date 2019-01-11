@@ -4,7 +4,7 @@
   "description": "What's Cooking App ",
   "main": "server.js",
   "scripts": {
-    "test": "cross-env NODE_ENV=test mocha --timeout 5000",
+    "test": "NODE_ENV=test mocha --timeout 5000",
     "start": "node server.js"
   },
   "author": "Trisha Aguinaldo",
